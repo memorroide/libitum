@@ -1,0 +1,26 @@
+package inter;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+
+public class Inter {
+
+    public static void main(String[] args) {
+        
+     JFrame ventana = new JFrame("Ad Libitum");
+     ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+     FlowLayout layout = new FlowLayout(FlowLayout.CENTER, 0, 0);
+     ventana.setBackground(Color.BLACK);
+     ventana.setSize(1000, 450); 
+     ventana.setResizable(false);
+     ventana.setLayout(layout); 
+     ventana.setVisible(true);
+
+     
+     Inicio inicio= new Inicio();
+     inicio.setVisible(true);
+     ventana.getContentPane().add(inicio);
+    }
+    
+}
